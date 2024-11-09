@@ -5,13 +5,19 @@
 int main() {
 	int n, i, m;
 	unsigned long long factorial;
-	scanf("%d", &n);
-	for (i = 1;i <= n;i++) {
-		factorial = 1;
-		for (m = 1;m <= i;m++) {
-			factorial *= m;
-		}
+	scanf_s("%d", &n);
+	if (n<0){
+		printf("负数无阶乘\n");
+
 	}
-	printf("%llu\n",factorial);
-	return 0;
+	else {
+		for (i = 1;i <= n;i++) {
+			factorial = 1;
+			for (m = 1;m <= i;m++) {
+				factorial *= m;
+			}
+		}
+		printf("%llu\n", factorial);
+		return 0;
+	}
 }
