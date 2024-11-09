@@ -5,7 +5,7 @@
 long long factorial(int n);
 int main() {
     int number;
-    scanf_s("%d", &number);
+    scanf("%d", &number);
     if (number < 0) {
         printf("阶乘未定义于负整数。\n");
     }
