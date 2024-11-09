@@ -5,10 +5,9 @@
 int main() {
 	int n, i, m;
 	unsigned long long factorial;
-	scanf_s("%d", &n);
+	scanf("%d", &n);
 	for (i = 1;i <= n;i++) {
 		factorial = 1;
-		
 		for (m = 1;m <= i;m++) {
 			factorial *= m;
 		}
